@@ -16,7 +16,17 @@ void ShowArray(string[]Array)
     }
     Console.WriteLine();
 }
+string[] Searching(string[]Array)
+{
+    for(int i=0;i<Array.Length;i++)
+    {
+        string word=Array[i];
+        if(word.Length<=3)
+        Console.Write(Array[i]+", ");
 
+    }
+    return Array;
+}
 Console.WriteLine("Input Value of array");
 int size=Convert.ToInt32(Console.ReadLine());
 
